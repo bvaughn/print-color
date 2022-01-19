@@ -87,9 +87,9 @@ function createColor(config = {}) {
   const {backgroundColor = '', weight = ''} = config;
   let {color = ''} = config;
 
-  function print(string) {
+  function print(...string) {
     if (isNode) {
-      console.log(`${backgroundColor}${color}${weight}${string}${NODE_RESET}`);
+      console.log(`${backgroundColor}${color}${weight}${string.join(' ')}${NODE_RESET}`);
     } else {
       if (!color) {
         color = isBrowserDarkTheme ? [255, 255, 255] : [0, 0, 0];
@@ -117,7 +117,7 @@ function createColor(config = {}) {
       console.log(
         '%c%s',
         `${backgroundColorStyle}${colorStyle}${weightStyle}`,
-        string,
+        string.join(' '),
       );
     }
   }

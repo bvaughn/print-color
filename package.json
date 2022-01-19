@@ -1,6 +1,6 @@
 {
   "name": "print-color",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Helper utility for printing colored text in Node or the Browser.",
   "main": "lib/index.js",
   "scripts": {
