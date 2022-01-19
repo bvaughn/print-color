@@ -1,10 +1,14 @@
 {
   "name": "print-color",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Helper utility for printing colored text in Node or the Browser.",
   "main": "lib/index.js",
   "scripts": {
-    "prepublish": "rollup -c"
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bvaughn/print-color"
   },
   "author": "bvaughn",
   "license": "MIT",
