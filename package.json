@@ -1,9 +1,16 @@
 {
   "name": "print-color",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helper utility for printing colored text in Node or the Browser.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "prepublish": "rollup -c"
+  },
   "author": "bvaughn",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "rollup": "^2.64.0",
+    "rollup-plugin-babel": "^4.4.0"
+  }
 }
